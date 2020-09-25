@@ -1,0 +1,171 @@
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4.5rem;
+  width: 65%;
+}
+
+.lCol {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+}
+
+.lCol p {
+  color: #063254;
+}
+
+.rCol {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.rCol h3 {
+  color: #ffe200;
+  font-size: 18px;
+  height: 25px;
+  width: 341px;
+}
+
+.rCol p {
+  color: #063254;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 295px;
+}
+
+.rCol input {
+  background: #ffffff;
+  border-radius: 4px;
+  border: 2px solid #99b6cc;
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  height: 30px;
+  margin-bottom: 0.4rem;
+  padding-left: 0.3rem;
+  width: 328px;
+}
+
+.rCol input:focus,
+.rCol input:active {
+  border: 3px solid #3183c5;
+  outline: none;
+}
+
+.rCol button {
+  background: #ffb700;
+  border-radius: 42px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+  height: 36px;
+  margin-top: 1rem;
+  transition: all 0.3s;
+  width: 328px;
+}
+
+.rCol button:hover {
+  background: #ffd15c;
+  transform: scale(1.03);
+}
+
+.rCol button:focus,
+.rCol button:active {
+  outline: none;
+}
+
+.rCol span {
+  font-weight: 900;
+}
+
+.bottomDiv {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: flex-start;
+  margin-top: 3rem;
+  width: 50%;
+}
+
+.bottomDiv::before {
+  border-top: 4px dotted #ffb700;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  padding-top: 1rem;
+  width: 73%;
+}
+
+.bottomDiv h1 {
+  color: #ffb700;
+  font-size: 29px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  width: 583px;
+}
+
+@media (max-width: 480px) {
+  .section {
+    height: auto;
+    width: 100%;
+  }
+  .container {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2.5rem;
+    width: 90%;
+  }
+  .lCol {
+    width: 100%;
+  }
+  .lCol p {
+    font-size: 14px;
+    width: 327px;
+  }
+
+  .rCol {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .rCol h3 {
+    margin-bottom: 1rem;
+  }
+
+  .rCol input,
+  .rCol button {
+    height: 40px;
+    width: 90%;
+  }
+
+  .bottomDiv {
+    padding-top: 1rem;
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  .bottomDiv h1 {
+    font-size: 18px;
+    margin-top: 1.5rem;
+  }
+  .bottomDiv::before {
+    padding-top: 0;
+    width: 90%;
+  }
+}

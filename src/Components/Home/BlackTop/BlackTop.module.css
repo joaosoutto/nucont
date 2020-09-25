@@ -1,0 +1,161 @@
+.section {
+  align-items: center;
+  background-image: url('../../../Assets/img_fernandarocha4.png');
+  background-size: cover;
+  display: flex;
+  height: 570px;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6.3rem;
+}
+
+.left {
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+
+.left h1 {
+  color: #ffe200;
+  font-size: 28px;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  width: 583px;
+}
+
+.par {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 7rem;
+  width: 543px;
+}
+
+.legendL {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  margin-top: 8rem;
+}
+
+.right {
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+
+.subtitle {
+  color: #ffe200;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.legendR {
+  color: #fff;
+  color: #ffffff;
+  font-size: 15px;
+  font-size: 15px;
+  margin-bottom: 1.8rem;
+  margin-left: 1rem;
+  text-align: center;
+  text-align: center;
+  width: 300px;
+  width: 300px;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  background: #ffffff;
+  border-radius: 4px;
+  border: 2px solid #99b6cc;
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  height: 36px;
+  margin-bottom: 0.4rem;
+  padding-left: 0.3rem;
+  width: 320px;
+}
+
+.input:focus,
+.btn:active {
+  border: 3px solid #3183c5;
+  outline: none;
+}
+
+.btn {
+  background: #ffb700;
+  border-radius: 42px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+  height: 36px;
+  margin-top: 1.5rem;
+  transition: all 0.3s;
+  width: 328px;
+}
+
+.btn:hover {
+  background: #ffd15c;
+  transform: scale(1.03);
+}
+
+.btn:focus,
+.btn:active {
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .section {
+    background-color: black;
+    background-image: none;
+    height: auto;
+  }
+  .content {
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin: 0;
+    width: 95%;
+  }
+  .left {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+  .right {
+    margin-bottom: 3.5rem;
+  }
+  .left h1 {
+    font-size: 25px;
+    margin: 2rem 0;
+    width: 70%;
+  }
+  .par {
+    font-size: 16px;
+    margin: 0;
+    width: 90%;
+  }
+  .legendL {
+    margin-top: 2rem;
+  }
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+}
