@@ -17,7 +17,7 @@
 
 .content h1 {
   color: #063254;
-  font-size: 29px;
+  font-size: 27px;
   margin: 2rem 0px 3rem 0px;
 }
 
@@ -63,17 +63,18 @@
   .section {
     height: auto;
   }
-  .content {
-    width: 90%;
-  }
+
   .content h1 {
     font-size: 24px;
     margin: 2rem 0;
     width: 329px;
+    text-align: center;
   }
+
   .content p {
     width: 276px;
   }
+  
   .content button {
     border-radius: 52px;
     height: 53px;

@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../../../context/AppContext';
 import styles from './Bottom.module.css';
 
 const Bottom = () => {
-  const handleClick = (event) => {
-    event.preventDefault();
-  };
+  const { getName, getEmail, handleClick } = useContext(AppContext);
 
   return (
     <section className={styles.section}>
@@ -24,9 +23,19 @@ const Bottom = () => {
             na <span>Imersão Nucont</span>
           </p>
           <form>
-            <input name="nome" placeholder="Nome" type="text" />
-            <input name="email" placeholder="E-mail" type="text" />
-            <button onClick={() => handleClick} type="submit">
+            <input
+              name="nome"
+              placeholder="Nome"
+              type="text"
+              onChange={getName}
+            />
+            <input
+              name="email"
+              placeholder="E-mail"
+              type="text"
+              onChange={getEmail}
+            />
+            <button onClick={handleClick} type="submit">
               QUERO ACOMPANHAR A SÉRIE
             </button>
           </form>

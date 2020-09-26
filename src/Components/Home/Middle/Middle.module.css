@@ -61,18 +61,15 @@
   .section {
     height: auto;
     padding-top: 3rem;
+    width: 100%;
   }
   .content {
-    align-items: flex-start;
-    flex-wrap: wrap;
     padding-left: 0;
     width: 89%;
   }
 
   .content h1 {
     font-size: 21px;
-    text-align: left;
-    width: 100%;
     width: auto;
   }
   .content li {

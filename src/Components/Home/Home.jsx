@@ -5,7 +5,7 @@ import Fernanda from './Fernanda/Fernanda';
 import Middle from './Middle/Middle';
 import YellowTop from './YellowTop/YellowTop';
 
-const CompName = () => (
+const Home = () => (
   <>
     <BlackTop />
     <YellowTop />
@@ -15,4 +15,4 @@ const CompName = () => (
   </>
 );
 
-export default CompName;
+export default Home;

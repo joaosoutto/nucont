@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { AppContext } from '../../../context/AppContext';
 import styles from './BlackTop.module.css';
 
 const BlackTop = () => {
-  const handleClick = (event) => {
-    event.preventDefault();
-  };
+  const { getName, getEmail, handleClick } = useContext(AppContext);
 
   return (
     <section className={styles.section}>
@@ -32,20 +32,24 @@ const BlackTop = () => {
               type="text"
               name="Nome"
               placeholder="Nome"
+              onChange={getName}
             />
             <input
               className={styles.input}
               type="text"
               name="E-mail"
               placeholder="E-mail"
+              onChange={getEmail}
             />
-            <button
-              className={styles.btn}
-              type="submit"
-              onClick={() => handleClick}
-            >
-              QUERO ACOMPANHAR A SÉRIE
-            </button>
+            <Link to="/obrigado">
+              <button
+                className={styles.btn}
+                type="submit"
+                onClick={handleClick}
+              >
+                QUERO ACOMPANHAR A SÉRIE
+              </button>
+            </Link>
           </form>
         </div>
       </div>

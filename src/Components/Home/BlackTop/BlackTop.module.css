@@ -55,14 +55,11 @@
 
 .legendR {
   color: #fff;
-  color: #ffffff;
   font-size: 15px;
   font-size: 15px;
   margin-bottom: 1.8rem;
   margin-left: 1rem;
   text-align: center;
-  text-align: center;
-  width: 300px;
   width: 300px;
 }
 
@@ -99,7 +96,7 @@
   font-size: 15px;
   font-weight: 900;
   height: 36px;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   transition: all 0.3s;
   width: 328px;
 }
@@ -120,42 +117,56 @@
     background-image: none;
     height: auto;
   }
+
   .content {
-    align-items: center;
     flex-direction: column;
     height: auto;
-    justify-content: center;
     margin: 0;
-    width: 95%;
+    width: 100%;
   }
   .left {
     align-items: center;
+    background-image: url('../../../Assets/img_fernandarocha4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     padding: 0;
-    text-align: center;
+    width: 100%;
   }
   .right {
     margin-bottom: 3.5rem;
+    text-align: center;
   }
+
+  .legendR {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+  }
+
   .left h1 {
     font-size: 25px;
-    margin: 2rem 0;
-    width: 70%;
+    margin: 2rem 0 2rem 1rem;
+    width: 183px;
   }
+
   .par {
     font-size: 16px;
     margin: 0;
-    width: 90%;
+    width: 247px;
+    margin-left: 5rem;
   }
+
   .legendL {
     margin-top: 2rem;
+    margin-left: 4rem;
+    font-size: 12px;
   }
   .subtitle {
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
   }
+
   .btn {
-    margin-top: 1rem;
+    margin-top: 0.2rem;
   }
 }
