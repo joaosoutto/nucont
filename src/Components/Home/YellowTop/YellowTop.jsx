@@ -7,9 +7,9 @@ const YellowTop = () => {
   const handleClick = () => {
     ReactGA.event({
       category: 'Button',
-      action: 'Clicou no botão da parte amarela',
+      action: 'Clicou no botão roxo do QUERO ASSISTIR A SÉRIE',
     });
-    alert('Assista mesmo a série!')
+    alert('Assista mesmo a série!');
   };
 
   return (

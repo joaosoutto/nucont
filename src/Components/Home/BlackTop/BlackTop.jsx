@@ -11,7 +11,7 @@ const BlackTop = () => {
   const handleClick = () => {
     ReactGA.event({
       category: 'Button',
-      action: 'Clicou no botão do topo',
+      action: 'Clicou no botão de cadastro do TOPO',
     });
 
     localStorage.setItem('nome', name);

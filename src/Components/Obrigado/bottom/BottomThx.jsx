@@ -9,7 +9,7 @@ const BottomThx = () => {
   const handleClick = () => {
     ReactGA.event({
       category: 'Button',
-      action: 'Clicou no botão do telegram',
+      action: 'Clicou no botão do CONECTE-SE AO TELEGRAM',
     });
     alert('Conecte-se já!');
   };

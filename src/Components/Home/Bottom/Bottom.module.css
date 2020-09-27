@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.container {
+.content {
   display: flex;
   justify-content: space-between;
   padding-top: 4.5rem;
@@ -134,7 +134,7 @@
     width: 100%;
   }
 
-  .container {
+  .content {
     align-items: center;
     flex-direction: column;
     justify-content: center;

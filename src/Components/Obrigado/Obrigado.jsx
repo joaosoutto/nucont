@@ -4,11 +4,11 @@ import MiddleThx from './middle/MiddleThx';
 import Top from './top/Top';
 
 const Obrigado = () => (
-  <div style={{ backgroundColor: '#ffb700' }}>
+  <section style={{ backgroundColor: '#ffb700' }}>
     <Top />
     <MiddleThx />
     <BottomThx />
-  </div>
+  </section>
 );
 
 export default Obrigado;

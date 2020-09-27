@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import BlackTop from './BlackTop/BlackTop';
 import Bottom from './Bottom/Bottom';
 import Fernanda from './Fernanda/Fernanda';

@@ -11,7 +11,7 @@ const Bottom = () => {
   const handleClick = () => {
     ReactGA.event({
       category: 'Button',
-      action: 'Clicou no botão do final',
+      action: 'Clicou no botão de cadastro do FINAL DA PÁGINA',
     });
 
     localStorage.setItem('nome', name);
@@ -20,7 +20,7 @@ const Bottom = () => {
 
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
+      <div className={styles.content}>
         <div className={styles.lCol}>
           <p>
             A Consultoria Contábil na Prática é uma série de vídeo gratuita.
