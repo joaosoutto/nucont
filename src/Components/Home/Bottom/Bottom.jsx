@@ -1,9 +1,22 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { AppContext } from '../../../context/AppContext';
 import styles from './Bottom.module.css';
 
+import ReactGA from 'react-ga';
+
 const Bottom = () => {
-  const { getName, getEmail, handleClick } = useContext(AppContext);
+  const { getName, getEmail, name, email } = useContext(AppContext);
+
+  const handleClick = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: 'Clicou no botão do final',
+    });
+
+    localStorage.setItem('nome', name);
+    localStorage.setItem('email', email);
+  };
 
   return (
     <section className={styles.section}>
@@ -35,9 +48,11 @@ const Bottom = () => {
               type="text"
               onChange={getEmail}
             />
-            <button onClick={handleClick} type="submit">
-              QUERO ACOMPANHAR A SÉRIE
-            </button>
+            <Link to="/obrigado">
+              <button onClick={handleClick} type="submit">
+                QUERO ACOMPANHAR A SÉRIE
+              </button>
+            </Link>
           </form>
         </div>
       </div>

@@ -3,8 +3,20 @@ import { Link } from 'react-router-dom';
 import { AppContext } from '../../../context/AppContext';
 import styles from './BlackTop.module.css';
 
+import ReactGA from 'react-ga';
+
 const BlackTop = () => {
-  const { getName, getEmail, handleClick } = useContext(AppContext);
+  const { getName, getEmail, name, email } = useContext(AppContext);
+
+  const handleClick = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: 'Clicou no botão do topo',
+    });
+
+    localStorage.setItem('nome', name);
+    localStorage.setItem('email', email);
+  };
 
   return (
     <section className={styles.section}>

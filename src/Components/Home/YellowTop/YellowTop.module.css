@@ -49,13 +49,13 @@
   width: 533px;
 }
 
-.btn:hover {
+.content button:hover {
   background-color: #7100da;
   transform: scale(1.03);
 }
 
-.btn:focus,
-.btn:active {
+.content button:focus,
+.content button:active {
   outline: none;
 }
 

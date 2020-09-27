@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
+import ReactGA from 'react-ga';
 
 const AppContext = createContext();
 
@@ -15,10 +16,15 @@ const AppProvider = ({ children }) => {
     setEmail(e.target.value);
   };
 
-  const handleClick = () => {
-    localStorage.setItem('nome', name);
-    localStorage.setItem('email', email);
-  };
+  // const handleClick = () => {
+  //   ReactGA.event({
+  //     category: 'Button',
+  //     action: 'Clicked the button',
+  //   });
+
+  //   localStorage.setItem('nome', name);
+  //   localStorage.setItem('email', email);
+  // };
 
   const context = {
     name,
@@ -27,7 +33,7 @@ const AppProvider = ({ children }) => {
     setEmail,
     getName,
     getEmail,
-    handleClick,
+    // handleClick,
   };
 
   return <AppContext.Provider value={context}>{children}</AppContext.Provider>;

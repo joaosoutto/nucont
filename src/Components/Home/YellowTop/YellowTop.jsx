@@ -1,9 +1,15 @@
 import React from 'react';
 import styles from './YellowTop.module.css';
 
+import ReactGA from 'react-ga';
+
 const YellowTop = () => {
-  const handleClick = (event) => {
-    event.preventDefault();
+  const handleClick = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: 'Clicou no botão da parte amarela',
+    });
+    alert('Assista mesmo a série!')
   };
 
   return (
@@ -24,7 +30,7 @@ const YellowTop = () => {
 
         <h6>Vamos conversar a respeito?</h6>
 
-        <button onClick={() => handleClick} type="submit">
+        <button onClick={handleClick} type="submit">
           QUERO ASSISTIR A SÉRIE: CONSULTORIA CONTÁBIL NA PRÁTICA
         </button>
       </div>
